@@ -1,3 +1,12 @@
 body{
     background-color: slateblue;
 }
+.radBox{
+    border: 2px yellow solid;
+    width: 80px;
+    float: left;
+    /* Als je inline-block gebruikt zet je de blokjes meer naar beneden en als je float: left gebruikt gaan de blokjes meer omhoog  */
+    /* display: inline-block; */
+    text-align: center;
+    /* transform: rotate(20deg); */
+}
