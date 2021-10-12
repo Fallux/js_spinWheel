@@ -1,6 +1,6 @@
 console.log("testetstetst");
 
-let getallen = [1,2,3,4,5,6,7,8];
+let getallen = [1,2,3,4,5,6,7,8,9,10,11,12,13];
 
 for (let i = 0; i < getallen.length; i++) {
     console.log(getallen[i]);
@@ -18,4 +18,13 @@ for (let i = 0; i < getallen.length; i++) {
     document.body.appendChild(elementDiv);  
 }
 
+let elementButton = document.createElement("BUTTON");
+elementButton.id="knop";
+elementButton.innerHTML="klik hier";
+document.body.appendChild(elementButton);
+
+elementButton.addEventListener("mouseover", mouseOverFunction);
+function mouseOverFunction() {
+    elementButton.style.cursor= "pointer";
+}
 

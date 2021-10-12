@@ -1,12 +1,22 @@
 body{
     background-color: slateblue;
+    position: relative;
 }
 .radBox{
     border: 2px yellow solid;
-    width: 80px;
+    width: 180px;
     float: left;
     /* Als je inline-block gebruikt zet je de blokjes meer naar beneden en als je float: left gebruikt gaan de blokjes meer omhoog  */
     /* display: inline-block; */
-    text-align: center;
+    /* text-align: center; */
+    margin-top: 100px;
+    position: absolute;
     /* transform: rotate(20deg); */
+}
+#knop{
+    padding: 10px;
+    background-color: springgreen;
+    border: 5px slategrey solid;
+    margin-top: 250px;
+    float: left;
 }
