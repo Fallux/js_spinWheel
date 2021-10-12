@@ -23,18 +23,34 @@ let elementButton = document.createElement("BUTTON");
 elementButton.id = "knop";
 elementButton.innerHTML = "klik hier";
 document.body.appendChild(elementButton);
-
+//cursor over knop
 elementButton.addEventListener("mouseover", mouseOverFunction);
 function mouseOverFunction() {
     elementButton.style.cursor = "pointer";
 }
 
+// score
 let elementScore = document.getElementById("score");
 
 elementButton.addEventListener("click", onClickFunction);
 function onClickFunction() {
     document.body.style.backgroundColor="purple";
 
+    let id = null;
+  const elem = elementDiv;   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + "px"; 
+      elem.style.left = pos + "px"; 
+    }
+  }
+  
     elementScore.innerHTML = Math.floor(Math.random() * (getallen.length));
 }
 
