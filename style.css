@@ -18,5 +18,13 @@ body{
     background-color: springgreen;
     border: 5px slategrey solid;
     margin-top: 250px;
+    margin-left: 65px;
     float: left;
+}
+#score{
+    margin-left: 65px;
+    width: 10px;
+    padding: 20px;
+    background-color: white;
+    border: 2px black solid;
 }
