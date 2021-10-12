@@ -18,13 +18,27 @@ for (let i = 0; i < getallen.length; i++) {
     document.body.appendChild(elementDiv);  
 }
 
+//knop maken
 let elementButton = document.createElement("BUTTON");
-elementButton.id="knop";
-elementButton.innerHTML="klik hier";
+elementButton.id = "knop";
+elementButton.innerHTML = "klik hier";
 document.body.appendChild(elementButton);
 
 elementButton.addEventListener("mouseover", mouseOverFunction);
 function mouseOverFunction() {
-    elementButton.style.cursor= "pointer";
+    elementButton.style.cursor = "pointer";
 }
+
+let elementScore = document.getElementById("score");
+
+elementButton.addEventListener("click", onClickFunction);
+function onClickFunction() {
+    document.body.style.backgroundColor="purple";
+
+    elementScore.innerHTML = Math.floor(Math.random() * (getallen.length));
+}
+
+
+
+
 
