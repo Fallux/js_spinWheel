@@ -34,7 +34,7 @@ let elementScore = document.getElementById("score");
 
 elementButton.addEventListener("click", function onClickFunction(){
   document.body.style.backgroundColor="purple";
-  document.getElementById("wheelContainer").style.animationName = "rotate";
-    elementScore.innerHTML = Math.floor(Math.random() * (getallen.length));
+  elementwheelContainer.style.animationName = "rotate";
+  elementScore.innerHTML = Math.floor(Math.random() * (getallen.length)+1);
 });
 

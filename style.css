@@ -25,7 +25,8 @@ body{
     width: 180px;
     height: 180px;
     margin-left: 100px;
-    animation: mymove 5s infinite;
+    animation: mymove 8s;
+    animation-fill-mode: forwards;
     /* border-radius: 50%; */
     /* background-color:   salmon; */
     margin-top: 100px;
