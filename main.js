@@ -1,5 +1,5 @@
 console.log("testetstetst");
-
+let elemenwheelContainer = document.getElementById("wheelContainer");
 let getallen = [1,2,3,4,5,6,7,8,9,10,11,12,13];
 
 for (let i = 0; i < getallen.length; i++) {
@@ -15,7 +15,7 @@ for (let i = 0; i < getallen.length; i++) {
         elementDiv.innerHTML += " getal geselecteerd ";
         // elementDiv.style.transform= "rotate(20deg)"; aanrader als beginner maar dat kost te veel tijd en energie besteding
     }
-    document.body.appendChild(elementDiv);  
+    elemenwheelContainer.appendChild(elementDiv);  
 }
 
 //knop maken
@@ -32,29 +32,27 @@ function mouseOverFunction() {
 // score
 let elementScore = document.getElementById("score");
 
-elementButton.addEventListener("click", onClickFunction);
-function onClickFunction() {
-    document.body.style.backgroundColor="purple";
-
-    let id = null;
-  const elem = elementDiv;   
-  let pos = 0;
-  clearInterval(id);
-  id = setInterval(frame, 5);
-  function frame() {
-    if (pos == 350) {
-      clearInterval(id);
-    } else {
-      pos++; 
-      elem.style.top = pos + "px"; 
-      elem.style.left = pos + "px"; 
-    }
-  }
-  
+elementButton.addEventListener("click", function onClickFunction(){
+  document.body.style.backgroundColor="purple";
+  setTimeout(function onClickFunction() {
+    elemenwheelContainer.api("play");
     elementScore.innerHTML = Math.floor(Math.random() * (getallen.length));
-}
+  }, 3000);
+});
+// function onClickFunction() {
+//     document.body.style.backgroundColor="purple";
+//     for(let i = 0; i < getallen.length; i++) {
+//       (function (local_i) {
+//         setTimeout(function(){
+//           document.getElementsByClassName('radBox' + local_i).classList.add('draaien');
+//         }, 100 * local_i);
+//       })(i);
+//     }
 
 
 
 
+function rotate(){
+   
+  }
 
