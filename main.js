@@ -23,7 +23,9 @@ for (let i = 0; i < getallen.length; i++) {
 // elementButton.id = "knop";
 // elementButton.innerHTML = "klik hier";
 // document.body.appendChild(elementButton);
+
 //cursor over knop
+let elementButton = document.getElementById("knop");
 elementButton.addEventListener("mouseover", mouseOverFunction);
 function mouseOverFunction() {
     elementButton.style.cursor = "pointer";
@@ -35,9 +37,6 @@ let elementScore = document.getElementById("score");
  function onClickFunction(){
   document.body.style.backgroundColor="purple";
   elementwheelContainer.style.animationName = "rotate";
-  elementwheelContainer.style.animationDuration= Math.floor(Math.random() * 100)+1;
   elementScore.innerHTML = Math.floor(Math.random() * (getallen.length)+1);
-  elementwheelContainer.classList.remove('rotate');
-  elementwheelContainer.classList.add('rotate');
 };
 
