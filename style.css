@@ -32,6 +32,9 @@ body{
     margin-top: 100px;
 
 }
+.rotate{
+    
+}
 @keyframes rotate {
     100% {transform: rotate(360deg);}
   }
